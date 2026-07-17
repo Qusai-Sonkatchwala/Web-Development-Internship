@@ -15,7 +15,7 @@ body {
 }
 
 /* ==========================================
-   2. NAVIGATION BAR
+   2. NAVIGATION BAR (Updated with Flexbox)
    ========================================== */
 header {
     background-color: #1e1e24;
@@ -26,9 +26,9 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Activates Flexbox */
+    justify-content: space-between; /* Pushes logo to left, menu to right */
+    align-items: center; /* Centers items vertically */
 }
 
 nav .logo h2 {
@@ -38,11 +38,12 @@ nav .logo h2 {
 
 nav ul {
     list-style: none;
-    display: flex;
+    display: flex; /* Activates Flexbox for menu items */
+    align-items: center;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 nav ul li a {
@@ -127,23 +128,28 @@ section h2 {
     font-size: 18px;
 }
 
+/* UPDATED SKILLS SECTION (Using CSS Grid) */
 #skills {
     background-color: #f1f3f5;
 }
 
-#skills ul {
-    list-style: none;
-    max-width: 600px;
+#skills .skills-grid {
+    display: grid; /* Activates CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 20px; 
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 #skills ul li {
     background: #fff;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    margin-bottom: 0; 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     font-weight: 500;
+    text-align: center;
+    border-top: 4px solid #ff4a57; 
 }
 
 #education {
