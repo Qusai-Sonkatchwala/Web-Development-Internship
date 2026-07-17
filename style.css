@@ -1,0 +1,212 @@
+/* ==========================================
+   1. GLOBAL STYLES & TYPOGRAPHY
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. NAVIGATION BAR
+   ========================================== */
+header {
+    background-color: #1e1e24;
+    padding: 20px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h2 {
+    color: #fff;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4a57;
+}
+
+/* ==========================================
+   3. HERO SECTION
+   ========================================== */
+#hero {
+    background: linear-gradient(rgba(30, 30, 36, 0.8), rgba(30, 30, 36, 0.9)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1200') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+/* BUTTON STYLES */
+button, button[type="submit"] {
+    background-color: #ff4a57;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, button[type="submit"]:hover {
+    background-color: #e03d49;
+}
+
+/* ==========================================
+   4. COMMON SECTION SPACING & HEADINGS
+   ========================================== */
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    color: #1e1e24;
+}
+
+/* ==========================================
+   5. ABOUT & SKILLS & EDUCATION CONTENT
+   ========================================== */
+#about {
+    background-color: #fff;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#skills {
+    background-color: #f1f3f5;
+}
+
+#skills ul {
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills ul li {
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    font-weight: 500;
+}
+
+#education {
+    background-color: #fff;
+}
+
+.education-item {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 4px solid #ff4a57;
+    background-color: #f8f9fa;
+}
+
+/* ==========================================
+   6. CONTACT FORM
+   ========================================== */
+#contact {
+    background-color: #f1f3f5;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff4a57;
+}
+
+/* ==========================================
+   7. FOOTER
+   ========================================== */
+footer {
+    background-color: #1e1e24;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
