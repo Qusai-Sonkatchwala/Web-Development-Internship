@@ -346,3 +346,76 @@ footer {
     margin-right: 8px;
     margin-bottom: 5px;
 }
+
+/* ==========================================
+   11. RESUME BUTTON & TIMELINE STYLES
+   ========================================== */
+.btn-secondary {
+    display: inline-block;
+    background-color: transparent;
+    color: #ff4a57;
+    border: 2px solid #ff4a57;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ff4a57;
+    color: white;
+}
+
+#experience {
+    background-color: #ffffff;
+}
+
+.experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline-item {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    border-left: 4px solid #1e1e24;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.timeline-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.timeline-meta h4 {
+    font-size: 18px;
+    color: #1e1e24;
+}
+
+.company {
+    color: #ff4a57;
+    font-weight: 600;
+}
+
+.duration {
+    font-size: 14px;
+    background-color: #e9ecef;
+    padding: 3px 10px;
+    border-radius: 20px;
+    color: #495057;
+}
+
+.timeline-item p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
