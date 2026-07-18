@@ -287,3 +287,62 @@ footer {
     background-color: #1e1e24;
     transform: scale(1.1); /* Slightly enlarges on hover */
 }
+
+/* ==========================================
+   10. PROJECTS CARD GRID
+   ========================================== */
+#projects {
+    background-color: #ffffff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Gentle float effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    font-size: 20px;
+    color: #1e1e24;
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Small tech badges inside the cards */
+.tech-tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #ff4a57;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-right: 8px;
+    margin-bottom: 5px;
+}
