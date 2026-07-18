@@ -419,3 +419,73 @@ footer {
     color: #666;
     line-height: 1.6;
 }
+
+/* ==========================================
+   12. SIDE-BY-SIDE CONTACT LAYOUT & VALIDATION STYLE
+   ========================================== */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.contact-info-panel, .contact-form-panel {
+    flex: 1 1 400px; /* Turns into a single column on small screens natively */
+}
+
+.contact-info-panel h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #1e1e24;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e1e24;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ff4a57;
+}
+
+/* Form validation styling adjustments */
+.form-control {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+    border-color: #ff4a57;
+    background-color: #fff8f8;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+    border-color: #2ecc71;
+}
+
+.error-msg {
+    color: #ff4a57;
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+    font-weight: 500;
+}
